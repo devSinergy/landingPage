@@ -1,0 +1,60 @@
+/* Contenedor principal */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Estilo del video para que ocupe toda el área */
+.video-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.video-background {
+  width: 100%;
+  height: 25%;
+  object-fit: cover;
+  opacity: 0.6;
+  filter: blur(1px);
+}
+
+/* Reflejo del video */
+.video-reflection {
+  width: 100%;
+  height: 25%;
+  object-fit: cover;
+  transform: scaleY(-1.05); /* Invierte el video verticalmente */
+  opacity: 0.4; /* Agrega un poco de transparencia para dar un efecto de reflejo */
+  filter: blur(1px); /* Aplica un pequeño desenfoque al reflejo */
+}
+
+/* Contenedor para el título y el eslogan */
+.video-content {
+  position: absolute;
+  top: 1.5rem;
+  padding: 2rem;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+}
+
+/* Estilo para el título */
+.video-title {
+  font-size: 4rem;
+  font-weight: 500;
+  font-family: "Heathergreen", sans-serif;
+  text-transform: uppercase;
+}
+
+/* Estilo para el eslogan */
+.video-slogan {
+  margin-top: 5rem;
+  font-size: 0.62rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}

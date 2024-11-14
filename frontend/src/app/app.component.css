@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #2f2f2f;
+  min-height: 100vh;
+}
+
+.title-header {
+  font-size: 10rem;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -0.125rem;
+  margin: 0;
+  padding: 0;
+  font-family: "Heathergreen";
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: "Heathergreen";
+  letter-spacing: 0.025rem;
+}
+
+.title-section {
+  font-family: "Hanca";
+}
+
+.experiences {
+  font-size: 2.5rem;
+  font-family: "Heathergreen";
+}
+
+p {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: Roboto;
+}
+
+ul {
+  font-size: 4rem;
+  font-family: "Heathergreen";
+}

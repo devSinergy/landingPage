@@ -1,0 +1,30 @@
+<header class="header">
+  <nav class="navbar">
+    <!-- Logo -->
+    <h1 class="logo">
+      <img src="icons/icon.svg" alt="logo">
+    </h1>
+
+    <!-- Ícono de menú hamburguesa -->
+    <div class="menu-icon" (click)="toggleMenu()">
+      <!-- Cambia entre iconos de abrir y cerrar -->
+      <img *ngIf="!isMenuOpen" src="icons/menu.svg" alt="menu">
+    </div>
+
+    <!-- Menú de navegación desplegable -->
+    <ul class="ul_links" [class.open]="isMenuOpen">
+      <!-- Icono de cerrar en la esquina superior derecha -->
+      <div class="menu-x" (click)="toggleMenu()">
+        <img src="icons/Close.svg" alt="close">
+      </div>
+      <!-- Links del menú -->
+      <li class="li_links"><a href="/" class="link">HOME</a></li>
+      <li class="li_links"><a href="/about" class="link">ABOUT US</a></li>
+      <li class="li_links"><a href="#" class="link">EXPERIENCES</a></li>
+      <li class="li_links"><a href="/contact" class="link">CONTACT</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  

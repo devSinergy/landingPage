@@ -1,0 +1,73 @@
+/* title.component.css */
+
+/* Contenedor del título y el eslogan */
+.title-container {
+  padding-top: 5rem;
+  position: relative;
+  width: 100%;
+  padding: 1rem;
+}
+
+/* Contenedor para la animación de desplazamiento sin espacios */
+.title-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 200%; /* Esto asegura que ambos textos se muestren dentro de un espacio mayor */
+  animation: slideLeftRight 18s linear infinite; /* Aplica la animación de desplazamiento */
+}
+
+/* Título con animación de deslizamiento continuo */
+.title {
+  font-size: 15rem;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -0.125rem;
+  font-family: "Heathergreen";
+  align-items: center;
+  color: #fff;
+  text-transform: uppercase;
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  display: inline-block; /* Permite que el texto se mueva de un lado a otro */
+  background-image: linear-gradient(
+    to bottom,
+    #ffffff,
+    #808080
+  ); /* Gradiente de colores */
+  -webkit-background-clip: text; /* Aplica el fondo solo al texto */
+  color: transparent; /* Hace el color del texto transparente para mostrar el gradiente */
+}
+
+.title-icon {
+  width: 8rem;
+  height: 8rem;
+  margin-right: 1rem;
+}
+
+/* Eslogan debajo del título */
+.slogan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  margin-top: 5rem;
+  letter-spacing: 0.025rem;
+  font-family: "Roboto";
+  color: #ddd;
+  max-width: 100%;
+  font-weight: 500;
+  line-height: 1.4rem;
+}
+
+/* Animación para mover el título de izquierda a derecha de forma continua */
+@keyframes slideLeftRight {
+  0% {
+    transform: translateX(0); /* Empieza desde la posición inicial */
+  }
+  100% {
+    transform: translateX(
+      -400%
+    ); /* Mueve el texto completamente hacia la izquierda */
+  }
+}
